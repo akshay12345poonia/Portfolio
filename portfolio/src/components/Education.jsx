@@ -6,7 +6,7 @@ const Education = () => {
       institution: "Masai School",
       degree: "Full Stack Web Development Program",
       location: "Bangalore, Karnataka",
-      period: "Expected May 2025",
+      period: "present",
       description:
         "Comprehensive program covering MERN stack development, data structures, algorithms, and modern web technologies with hands-on projects and industry-relevant curriculum.",
       highlights: ["MERN Stack Development", "Data Structures & Algorithms", "System Design", "Project-based Learning"],
