@@ -2,7 +2,7 @@ import { Code, Database, Globe, Zap } from "lucide-react"
 
 const About = () => {
   const stats = [
-    { number: "3+", label: "Projects Completed", icon: Code },
+    { number: "5+", label: "Projects Completed", icon: Code },
     { number: "10+", label: "Technologies", icon: Database },
     { number: "2+", label: "Years Learning", icon: Globe },
     { number: "100%", label: "Dedication", icon: Zap },
