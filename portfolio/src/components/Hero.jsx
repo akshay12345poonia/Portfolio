@@ -77,15 +77,9 @@ const Hero = ({ onResumeClick }) => {
                   alt="Akshay Poonia"
                   className="w-full h-full object-cover object-center"
                   loading="eager"
-                  decoding="async"
+                  decoding="sync"
                 />
               </div>
-              {/* Decorative elements */}
-              <div className="absolute -top-2 -right-2 xs:-top-4 xs:-right-4 w-12 h-12 xs:w-16 xs:h-16 md:w-20 md:h-20 bg-primary-500/20 rounded-full animate-bounce-slow"></div>
-              <div
-                className="absolute -bottom-2 -left-2 xs:-bottom-4 xs:-left-4 w-10 h-10 xs:w-12 xs:h-12 md:w-16 md:h-16 bg-primary-400/20 rounded-full animate-bounce-slow"
-                style={{ animationDelay: "1s" }}
-              ></div>
             </div>
           </div>
         </div>
