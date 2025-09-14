@@ -9,6 +9,7 @@ const Projects = () => {
       technologies: ["HTML5", "CSS3", "JavaScript", "Firebase"],
       liveDemo: "https://mind-board.netlify.app/",
       github: "https://github.com/akshay12345poonia/Mind_Board_App",
+      image: "/Mind-Board-App.png",
       features: [
         "Real-time collaborative drawing",
         "Customizable drawing tools",
@@ -24,6 +25,7 @@ const Projects = () => {
       technologies: ["ReactJS", "Vite", "TailwindCSS", "Firebase"],
       liveDemo: "https://crime-tracker-system.netlify.app/",
       github: "https://github.com/akshay12345poonia/Crime_Management_System",
+      image: "/Crime-tracker-system.png",
       features: ["Role-based access control", "Real-time complaint tracking", "Admin dashboard", "Responsive design"],
       gradient: "from-red-500 to-pink-600",
     },
@@ -34,6 +36,7 @@ const Projects = () => {
       technologies: ["HTML5", "CSS3", "JavaScript", "Firebase"],
       liveDemo: "https://mit-hub.netlify.app/",
       github: "https://github.com/akshay12345poonia/MIT_Hub",
+      image: "/mit-hub.png",
       features: [
         "File upload system",
         "Advanced search functionality",
@@ -49,6 +52,7 @@ const Projects = () => {
       technologies: ["HTML5", "CSS3", "JavaScript", "Firebase", "CSS Grid", "Firebase Auth"],
       liveDemo: "https://e-bay-clone-website.netlify.app/",
       github: "https://github.com/akshay12345poonia/ebay",
+      image: "/e-bay.png",
       features: [
         "User account management",
         "Product buy/sell functionality", 
@@ -64,6 +68,7 @@ const Projects = () => {
       technologies: ["ReactJS", "Canvas Game", "React Router DOM", "TailwindCSS"],
       liveDemo: "https://mind-arena.netlify.app/",
       github: "https://github.com/akshay12345poonia/MindArena",
+      image: "/mind-arena.png",
       features: [
         "Multiple game modes",
         "Canvas-based graphics",
@@ -95,6 +100,17 @@ const Projects = () => {
             >
               {/* Project Header */}
               <div className={`h-2 bg-gradient-to-r ${project.gradient}`}></div>
+
+              {/* Project Image */}
+              <div className="relative overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={`${project.title} demo`}
+                  className="w-full h-48 sm:h-52 md:h-56 lg:h-60 object-cover transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
 
               <div className="p-4 md:p-6">
                 <div className="flex items-start justify-between mb-3 md:mb-4">
