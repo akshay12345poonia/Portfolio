@@ -71,11 +71,11 @@ const Hero = ({ onResumeClick }) => {
           {/* Profile Image */}
           <div className="flex justify-center lg:justify-end animate-slide-up order-1 lg:order-2">
             <div className="relative">
-              <div className="w-64 h-64 xs:w-72 xs:h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-80 lg:h-80 xl:w-96 xl:h-100 rounded-full overflow-hidden border-4 border-primary-500 shadow-2xl shadow-primary-500/20">
+              <div className="w-64 h-64 xs:w-72 xs:h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-full overflow-hidden border-4 border-primary-500 shadow-2xl shadow-primary-500/20">
                 <img
-                  src="/profilem.jpg"
+                  src="/akshay poonia.jpg"
                   alt="Akshay Poonia"
-                  className="w-full h-full object-cover object-center"
+                  className="w-full h-full object-cover object-top scale-110"
                 />
               </div>
               {/* Decorative elements */}
