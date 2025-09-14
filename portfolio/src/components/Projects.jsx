@@ -92,7 +92,7 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -106,7 +106,7 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={`${project.title} demo`}
-                  className="w-full h-48 sm:h-52 md:h-56 lg:h-60 object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-56 sm:h-64 md:h-72 lg:h-80 object-cover transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -127,14 +127,9 @@ const Projects = () => {
                 {/* Features */}
                 <div className="mb-4 md:mb-6">
                   <h4 className="font-semibold text-blue-300 mb-2 md:mb-3 text-sm md:text-base">Key Features:</h4>
-                  <ul className="space-y-1 md:space-y-2">
-                    {project.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start text-slate-300 text-xs md:text-sm">
-                        <div className="w-1.5 h-1.5 bg-blue-400 rounded-full mt-2 mr-2 md:mr-3 flex-shrink-0"></div>
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <p className="text-slate-300 text-xs md:text-sm leading-relaxed">
+                    {project.features.join(" | ")}
+                  </p>
                 </div>
 
                 {/* Technologies */}
