@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Menu, X, FileText } from "lucide-react"
+import { Menu, X, FileText, ExternalLink } from "lucide-react"
 
 const Navbar = ({ activeSection }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -25,11 +25,8 @@ const Navbar = ({ activeSection }) => {
 
   // Function to handle resume button click
   const handleResumeClick = () => {
-    // Path to your resume file in the public folder
-    const resumePath = '/Akshay_Resume.pdf'
-    
-    // Open the PDF file in a new tab
-    window.open(resumePath, '_blank')
+    // Open PDF in new tab
+    window.open('/Akshay-poonia-Resume.pdf', '_blank')
     
     // Close mobile menu if open
     setIsMenuOpen(false)
@@ -64,10 +61,10 @@ const Navbar = ({ activeSection }) => {
               ))}
               <button
                 onClick={handleResumeClick}
-                className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500 to-primary-600 text-white text-sm font-medium rounded-lg hover:from-primary-600 hover:to-primary-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-primary-500/25"
+                className="inline-flex items-center px-5 py-2.5 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm font-semibold rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/30 border border-blue-500/20"
               >
-                <FileText className="w-4 h-4 mr-2" />
-                Resume
+                <ExternalLink className="w-4 h-4 mr-2" />
+                View Resume
               </button>
             </div>
           </div>
@@ -103,10 +100,10 @@ const Navbar = ({ activeSection }) => {
             ))}
             <button
               onClick={handleResumeClick}
-              className="w-full mt-4 inline-flex items-center justify-center px-4 py-2 bg-gradient-to-r from-primary-500 to-primary-600 text-white text-sm font-medium rounded-lg hover:from-primary-600 hover:to-primary-700 transition-all duration-300"
+              className="w-full mt-4 inline-flex items-center justify-center px-5 py-2.5 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm font-semibold rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-blue-500/30 border border-blue-500/20"
             >
-              <FileText className="w-4 h-4 mr-2" />
-              Resume
+              <ExternalLink className="w-4 h-4 mr-2" />
+              View Resume
             </button>
           </div>
         </div>

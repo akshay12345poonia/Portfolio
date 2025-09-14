@@ -40,7 +40,7 @@ const Hero = ({ onResumeClick }) => {
     className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-xl hover:from-primary-600 hover:to-primary-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-primary-500/25"
   ></a> */}
               <a
-                href="/Akshay_Resume.pdf"
+                href="/Akshay-poonia-Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white text-sm md:text-base font-semibold rounded-xl hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25"
@@ -49,8 +49,8 @@ const Hero = ({ onResumeClick }) => {
                 View Resume
               </a>
               <a
-                href="/Akshay_Resume.pdf"
-                download="Akshay_Resume.pdf"
+                href="/Akshay-poonia-Resume.pdf"
+                download="Akshay-Poonia-Resume.pdf"
                 className="inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-green-500 to-green-600 text-white text-sm md:text-base font-semibold rounded-xl hover:from-green-600 hover:to-green-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-green-500/25"
               >
                 <FileText className="w-4 h-4 md:w-5 md:h-5 mr-2" />
@@ -71,11 +71,18 @@ const Hero = ({ onResumeClick }) => {
           {/* Profile Image */}
           <div className="flex justify-center lg:justify-end animate-slide-up order-1 lg:order-2">
             <div className="relative">
-              <div className="w-64 h-64 xs:w-72 xs:h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-full overflow-hidden border-4 border-primary-500 shadow-2xl shadow-primary-500/20">
+              <div className="w-64 h-64 xs:w-72 xs:h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-80 lg:h-80 xl:w-96 xl:h-100 rounded-full overflow-hidden border-4 border-primary-500 shadow-2xl shadow-primary-500/20">
                 <img
                   src="/profilem.jpg"
                   alt="Akshay Poonia"
                   className="w-full h-full object-cover object-center"
+                  loading="eager"
+                  decoding="async"
+                  style={{
+                    imageRendering: 'high-quality',
+                    imageRendering: '-webkit-optimize-contrast',
+                    imageRendering: 'crisp-edges'
+                  }}
                 />
               </div>
               {/* Decorative elements */}
